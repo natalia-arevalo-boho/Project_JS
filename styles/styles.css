@@ -1,0 +1,299 @@
+/*Natalia Arevalo, id student: 200560279
+/* 
+  This CSS file contains styles for the personal portfolio website. 
+  It defines the layout and visual appearance for the homepage, including the navbar, header, project cards, sidebar, and categories. 
+  The page uses a soft pink color scheme, with hover effects on buttons and links for better interactivity.
+  Additionally, styles for responsiveness are included to ensure the website looks good on different screen sizes.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #faf9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  background-color: #f6d1e3 !important; 
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #f1c5d1; 
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #3e3e3e !important;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff90b3 !important; /* Rosa suave en hover */
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Encabezado */
+header {
+  background-color: #fff;
+  padding: 4rem 0;
+  border-bottom: 2px solid #f1c5d1;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e36a8b; /* Rosa suave más oscuro */
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #7f7f7f;
+}
+
+/* Estilo de las tarjetas de proyectos */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e36a8b;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #7f7f7f;
+  margin-bottom: 1rem;
+}
+
+.card .btn-primary {
+  background-color: #ffb6c1;
+  border-color: #ffb6c1;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.card .btn-primary:hover {
+  background-color: #f08c9e;
+  border-color: #f08c9e;
+  transition: background-color 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 2rem;
+}
+
+.sidebar .card {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .card-header {
+  background-color: #f6d1e3;
+  color: #fff;
+}
+
+.sidebar .card-body {
+  background-color: #fdfdfd;
+}
+
+/* Búsqueda y categorías */
+.input-group input {
+  border-radius: 5px;
+  border: 1px solid #f1c5d1;
+  padding: 8px 12px; /* Reducir tamaño de las cajas */
+  font-size: 1rem; /* Ajuste del tamaño de fuente */
+}
+
+.input-group button {
+  background-color: #ffb6c1;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.input-group button:hover {
+  background-color: #f08c9e;
+  transition: background-color 0.3s ease;
+}
+
+ul.list-unstyled li a {
+  color: #e36a8b;
+  text-decoration: none;
+}
+
+ul.list-unstyled li a:hover {
+  color: #f08c9e;
+  transition: color 0.3s ease;
+}
+
+/* Contenedor general */
+.portfolio-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Categorías */
+.category-card {
+  border-radius: 10px;
+  background-color: #ffe4e6;
+}
+
+.bg-pink {
+  background-color: #ff7eb9 !important;
+}
+
+.text-pink {
+  color: #ff7eb9;
+}
+
+/* Tarjetas de portfolio */
+.portfolio-card {
+  width: 48%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  height: 150px;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Botón rosa personalizado */
+.btn-pink {
+  background-color: #ff7eb9;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #ff589e;
+}
+
+/* Estilos específicos para el formulario */
+.form-group {
+  margin-bottom: 1rem; /* Reducir espacio entre campos */
+}
+
+input[type="text"], input[type="number"] {
+  border-radius: 8px;
+  border: 1px solid #f1c5d1;
+  padding: 8px 12px; /* Reducir el tamaño de las cajas */
+  font-size: 1rem; /* Ajuste del tamaño de la fuente */
+  width: 100%; /* Asegurarse de que ocupen el 100% del contenedor */
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #ff7eb9;
+  box-shadow: 0 0 5px rgba(255, 126, 185, 0.7);
+}
+
+button {
+  background-color: #ff7eb9;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff589e;
+}
+
+button:disabled {
+  background-color: #f0c9d7;
+  cursor: not-allowed;
+}
+
+/* Estilos para los resultados */
+.text-danger {
+  color: #e36a8b; /* Color rosa oscuro para errores */
+}
+
+.text-info {
+  color: #2c3e50; /* Color azul oscuro para la sección de resultados */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
